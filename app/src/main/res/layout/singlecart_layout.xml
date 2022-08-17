@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:elevation="5dp"
+    app:cardCornerRadius="3dp"
+    android:layout_margin="5dp"
+    android:background="@color/white"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_cart"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:textStyle="bold"
+            android:text = "crunchy dark chocolate peanut butter "
+            android:id="@+id/CartName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/image_cart"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/txt_count_cart"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/image_cart"
+            app:layout_constraintTop_toBottomOf="@+id/CartName"
+            app:layout_constraintVertical_bias="0.77" />
+
+        <TextView
+            android:id="@+id/sku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="price"
+            app:layout_constraintBottom_toTopOf="@+id/txt_count_cart"
+            app:layout_constraintEnd_toEndOf="@+id/CartName"
+            app:layout_constraintStart_toStartOf="@+id/CartName"
+            app:layout_constraintTop_toBottomOf="@+id/CartName" />
+
+        <TextView
+            android:id="@+id/price_cart"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/sku"
+            app:layout_constraintStart_toEndOf="@+id/sku"
+            app:layout_constraintTop_toTopOf="@+id/sku" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:text="Total"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txt_count_cart"
+            app:layout_constraintTop_toBottomOf="@+id/price_cart"
+            app:layout_constraintVertical_bias="0.774" />
+
+        <TextView
+            android:id="@+id/TotalCost"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/total"
+            app:layout_constraintTop_toTopOf="@+id/total"
+            app:layout_constraintBottom_toBottomOf="@+id/total"
+            android:textStyle="bold"
+            android:text="9000"
+            android:gravity="end" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="Rs"
+            app:layout_constraintBottom_toBottomOf="@+id/TotalCost"
+            app:layout_constraintStart_toEndOf="@+id/TotalCost"
+            app:layout_constraintTop_toTopOf="@+id/TotalCost" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+

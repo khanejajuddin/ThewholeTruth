@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:contentPadding="5dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardUseCompatPadding="true"
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:id="@+id/image_product"
+            android:scaleType="fitCenter"
+            />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/tct_product_name"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:padding="2dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs 1230"
+                android:textSize="15sp"
+                android:background="@drawable/txt_round"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Add_to_cart"
+            android:text="Add to cart"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
